@@ -2,6 +2,22 @@ module github.com/88250/pipe
 
 go 1.12
 
+replace (
+	golang.org/x/crypto => github.com/golang/crypto v0.0.0-20190411191339-88737f569e3a
+	golang.org/x/exp => github.com/golang/exp v0.0.0-20191030013958-a1ab85dbe136
+	golang.org/x/image => github.com/golang/image v0.0.0-20191009234506-e7c1f5e7dbb8
+	golang.org/x/lint => github.com/golang/lint v0.0.0-20190930215403-16217165b5de
+	golang.org/x/mobile => github.com/golang/mobile v0.0.0-20191031020345-0945064e013a
+	golang.org/x/mod => github.com/golang/mod v0.1.1-0.20191101203923-a222b9651630
+	golang.org/x/net => github.com/golang/net v0.0.0-20190404232315-eb5bcb51f2a3
+	golang.org/x/oauth2 => github.com/golang/oauth2 v0.0.0-20190604053449-0f29369cfe45
+	golang.org/x/sync => github.com/golang/sync v0.0.0-20190423024810-112230192c58
+	golang.org/x/sys => github.com/golang/sys v0.0.0-20190405154228-4b34438f7a67
+	golang.org/x/text => github.com/golang/text v0.3.2
+	golang.org/x/time => github.com/golang/time v0.0.0-20190308202827-9d24e82272b4
+	golang.org/x/tools => github.com/golang/tools v0.0.0-20190411180116-681f9ce8ac52
+)
+
 require (
 	github.com/88250/gulu v1.0.0
 	github.com/88250/lute v1.1.3-0.20200214023719-300b88177a5a
