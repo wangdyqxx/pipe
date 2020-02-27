@@ -25,15 +25,16 @@ import (
 )
 
 func showIndexAction(c *gin.Context) {
-	t, err := template.ParseFiles("console/dist/index.html")
-	if nil != err {
-		logger.Errorf("load index page failed: " + err.Error())
-		c.String(http.StatusNotFound, "load index page failed")
-
-		return
-	}
-
-	t.Execute(c.Writer, nil)
+	c.Redirect(http.StatusFound, model.Conf.Server+"/blogs/wangdyqxx")
+	//t, err := template.ParseFiles("console/dist/index.html")
+	//if nil != err {
+	//	logger.Errorf("load index page failed: " + err.Error())
+	//	c.String(http.StatusNotFound, "load index page failed")
+	//
+	//	return
+	//}
+	//
+	//t.Execute(c.Writer, nil)
 }
 
 func showChangelogsAction(c *gin.Context) {
