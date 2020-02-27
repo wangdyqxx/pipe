@@ -25,7 +25,7 @@ import (
 )
 
 func showIndexAction(c *gin.Context) {
-	c.Redirect(http.StatusFound, model.Conf.Server+"/blogs/wangdyqxx")
+	c.Redirect(http.StatusFound, model.Conf.Server+"/blogs/wangdy")
 	//t, err := template.ParseFiles("console/dist/index.html")
 	//if nil != err {
 	//	logger.Errorf("load index page failed: " + err.Error())
