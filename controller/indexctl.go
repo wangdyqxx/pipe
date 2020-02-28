@@ -25,6 +25,7 @@ import (
 )
 
 func showIndexAction(c *gin.Context) {
+	logger.Infof("showIndexAction:%+v", c)
 	c.Redirect(http.StatusFound, model.Conf.Server+"/blogs/wangdy")
 	//t, err := template.ParseFiles("console/dist/index.html")
 	//if nil != err {

@@ -28,6 +28,7 @@ import (
 )
 
 func showArticlesAction(c *gin.Context) {
+	logger.Infof("showArticlesAction:%+v", c)
 	page := util.GetPage(c)
 	dataModel := getDataModel(c)
 	blogID := getBlogID(c)

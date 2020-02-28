@@ -73,7 +73,7 @@ func main() {
 	go http.ListenAndServe("0.0.0.0:8154", nil)
 
 	handleSignal(server)
-
+	logger.Infof("Pipe (v%s) db [%s]", model.Version, model.Conf.SQLite)
 	logger.Infof("Pipe (v%s) is running [%s]", model.Version, model.Conf.Server)
 	if err := server.ListenAndServe(); nil != err {
 		logger.Fatalf("listen and serve failed: " + err.Error())
