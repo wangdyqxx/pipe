@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GOPROXY=https://goproxy.io
+GOPROXY=https://goproxy.cn
 go build -i -v
 cd console && npm install && npm run build
 cd ../theme && npm install && npm run build
